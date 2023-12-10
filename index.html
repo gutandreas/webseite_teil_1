@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaderleute</title>
+    <script src="scripts/indexScripts.js"></script>
+    <link rel="stylesheet" href="styles/example_style.css">
+
+
+</head>
+<body>
+
+<h1>Willkommen auf der Webseite für die tollsten Kaderleute</h1>
+
+<div class="wichtig">
+    <h2 id="empfehlung_ueberschrift">Empfehlung</h2>
+    <p>Suchen Sie ein neues Kadermitglied für Ihr Unternehmen?</p>
+
+    <p>Dann empfehlen wir Ihnen <a href="peter_muesli.html">Peter Müsli</a>,
+        <a href="petra_katzmann.html">Petra Katzmann</a>
+        oder <a href="klaus_hund.html">Klaus Hund</a></p>
+</div>
+
+
+<div id="weiheitsblock">
+    <h2>Weisheit</h2>
+    <button onclick="ladeWeisheit()">Weisheit aus der Wirtschaftswelt</button>
+    <p id="weisheitsParagraph">Weisheit...</p>
+</div>
+
+<div id="suchmaschinenblock" class="wichtig">
+    <h2>Suchmaschine</h2>
+    <p>Welche Kandidatinnen oder Kandidaten passen zu Ihrem Unternehmen? Was können Sie bieten?</p>
+    <label for="jahreseinkommen">Jahreseinkommen: </label>
+    <input type="number" id="jahreseinkommen" name="jahreseinkommen">
+
+    <label for="ferienwochen">Anzahl Ferienwochen: </label>
+    <input type="number" id="ferienwochen" name="ferienwochen">
+
+    <label for="auto">Geschäftsauto: </label>
+    <input type="checkbox" id="auto" name="auto">
+
+    <label for="buero">Eigenes Büro: </label>
+    <input type="checkbox" id="buero" name="buero">
+
+    <label for="jahresarbeitszeit">Jahresarbeitszeit: </label>
+    <input type="checkbox" id="jahresarbeitszeit" name="jahresarbeitszeit">
+
+    <button id="auswertbutton" onclick="findePassendeKandidaten()">Auswerten</button>
+    <p id="passendeKandidaten">Passende Kandidaten...</p>
+</div>
+
+</body>
+</html>

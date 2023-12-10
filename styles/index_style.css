@@ -1,0 +1,18 @@
+body {
+    background: lightblue;
+    font-family: "Comic Sans MS";
+    color: red;
+}
+
+.wichtig {
+    font-family: "Arial";
+}
+
+#empfehlung_ueberschrift {
+    background: green;
+}
+
+#auswertbutton {
+    background: lightpink;
+}
+
